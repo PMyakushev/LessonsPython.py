@@ -1,0 +1,22 @@
+# Задача №27. Решение в группах
+# Пользователь вводит текст(строка). Словом считается
+# последовательность непробельных символов идущих
+# подряд, слова разделены одним или большим числом
+# пробелов. Определите, сколько различных слов
+# содержится в этом тексте.
+# Input: She sells sea shells on the sea shore The shells
+# that she sells are sea shells I'm sure.So if she sells sea
+# shells on the sea shore I'm sure that the shells are sea
+# shore shells
+# Output: 13
+
+
+array_str = "She sells sea shells on the sea shore The shells that she sells are sea shells I'm sure.So if she sells sea shells on the sea shore I'm sure that the shells are sea shore shells"
+
+
+# new_array_set = set ()
+# for el in array_str.lower().split():
+#   new_array_set.add(el)
+# print(len(new_array_set))
+
+print(len(set(array_str.lower().split())))
